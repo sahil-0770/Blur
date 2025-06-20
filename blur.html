@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sahil</title>
+  <style>
+  .blur-effect{
+    filter: blur(.5px);
+  }
+  .grayscale-effect{
+    filter: grayscale(100%);
+  }
+  .brightness-effect{
+    filter: brightness(150%);
+  }
+  body{
+    background:url('/tree.jpg') no-repeat ;
+    background-size:cover;
+
+  }
+    .modal{
+      width:300px;
+      padding: 10px;
+      background: rgba(235, 235, 235, 0.5);
+      backdrop-filter: blur(50px);
+      border-radius: 10px;
+      margin: 50px auto;
+    }
+    .blend-container{
+      background: linear-gradient(white,grey);
+      padding:50px;
+    }
+    .blend-text{
+      font-size: 50px;
+      font-weight: bold;
+      color:pink;
+      mix-blend-mode: overlay;
+    }
+  
+  </style>
+</head>
+
+<body>
+  <h2>normal</h2>
+  <img src="/img/omax.jpg" alt="normal image" width="200" >
+  <audio controls>
+    <source src="/img/m.m4a" type="audio/mp3"
+  </audio>
+  
+<h2>blur</h2>
+<img class="blur-effect" src="/img/kurta-1.jpg" alt="blur image" width= "200">
+<h2>grayscale </h2>
+<img class="grayscale-effect" src="/img/1.jpg" alt="grayscale" width="200">
+<h2>brightness-effect</h2>
+<img class="brightness-effect" src="/img/sahil.jpeg" alt="brightened" width="200">
+<div class="blend-container">
+  <h1 class="blend-text">Pictures</h1>
+</div>
+<div class="modal">
+ <h2>Looks😁</h2>
+ <p>what is your opinion</p>
+</div>
+</body>
+
+</html>
